@@ -18,12 +18,12 @@ public class FragmentTwo extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,  Bundle savedInstanceState) {
-        View retView = inflater.inflate(R.layout.fragmenttwo, container);
+        View view = inflater.inflate(R.layout.fragmenttwo, container);
 
-        if(retView!=null) {
-            TextView fragmentRightTextView = (TextView)retView.findViewById(R.id.fragmentRightTextView);
+        if(view!=null) {
+            TextView fragmentRightTextView = (TextView)view.findViewById(R.id.fragmentRightTextView);
             fragmentRightTextView.setText("This is the default right fragment.");
         }
-        return retView;
+        return view;
     }
 }

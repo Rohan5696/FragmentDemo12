@@ -19,13 +19,13 @@ public class FragmentOne extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View retView = inflater.inflate(R.layout.fragmentone, container);
+        View view = inflater.inflate(R.layout.fragmentone, container);
 
         final FragmentActivity fragmentBelongActivity = (FragmentActivity) getActivity();
 
-        if(retView!=null)
+        if(view!=null)
         {
-            Button androidButton = (Button)retView.findViewById(R.id.fragmentLeftButtonAndroid);
+            Button androidButton = (Button)view.findViewById(R.id.fragmentLeftButtonAndroid);
             androidButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -38,7 +38,7 @@ public class FragmentOne extends Fragment {
             });
         }
 
-        return retView;
+        return view;
     }
 }
 
